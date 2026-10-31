@@ -1,32 +1,46 @@
+Nice foundation — the visual identity is consistent (the pink→blurple gradient, badges, typing banner) and it already looks more polished than most profile READMEs. The main issues are in the content, not the design. Here's what I'd change and why, then the full rewrite.
+
+## What's holding it back
+
+**1. Your GitHub username can't be `godme_on`.** GitHub usernames don't allow underscores — only letters, numbers, and hyphens. Every link to `github.com/godme_on` and every stats widget (`?username=godme_on`) is currently broken. I've used `godme-on` below; find-and-replace with your real handle.
+
+**2. The projects section has no links.** "Featured Projects" with nothing to click is the single biggest missed opportunity. Link the repo and a live demo. Also, "Custom UI/UX Systems" isn't a project — it's a skill description dressed up as one. Either point it at a real repo or drop it.
+
+**3. Social badges appear twice** (top and bottom), identical. Pick one spot. I kept the header for quick links and made the footer a short CTA.
+
+**4. Too much marketing language.** "Bespoke," "executive personal productivity dashboard," "zero unnecessary bloat," "LocalStorage Persistence Architecture" — a recruiter or dev reads these as filler. Plain, specific wording is more credible: *"a habit tracker with a paper-and-ink aesthetic, dense calendar grids, and weekly analytics"* says more than *"executive productivity dashboard."*
+
+**5. Technical problems with the widgets:**
+- `github-readme-streak-stats.herokuapp.com` is dead/unreliable — use `streak-stats.demolab.com`.
+- `count_private=true` is a removed parameter in github-readme-stats.
+- Stats are hidden inside a `<details>` — that's the one thing people actually scroll for. Show them.
+
+**6. "Fun Fact: I believe every pixel counts"** isn't a fun fact, it's a slogan. Either make it actually fun or cut it.
+
+**7. Discord invite links expire** unless you generate one set to "never expire." Worth double-checking yours. Also consider adding an email or portfolio — Instagram + Discord alone reads as a hobbyist profile if you want opportunities.
+
+---
+
+## Improved README
+
+```markdown
 <div align="center">
 
-  <!-- Dynamic Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E4405F,100:5865F2&height=120&section=header" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E4405F,100:5865F2&height=120&section=header" width="100%" alt="" />
 
-  <h1>Hi there, I'm <a href="https://github.com/godme_on">godme_on</a> 👋</h1>
-  
-  <p align="center">
-    <strong>Creative Developer • UI/UX Designer • Open Source Builder</strong>
-  </p>
+  <h1>Hi, I'm godme-on 👋</h1>
 
-  <!-- Dynamic Typing SVG -->
-  <a href="https://github.com/godme_on">
-    <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=600&size=20&duration=2800&pause=1000&color=E4405F&center=true&vcenter=true&width=650&lines=Crafting+aesthetic+%26+high-performance+web+apps;Building+productivity+tools+and+modern+interfaces;Passionate+about+vintage+aesthetics+%26+clean+code;Always+learning%2C+always+building." alt="Typing SVG Banner" />
-  </a>
+  <p><strong>Creative Developer · UI/UX Designer · Open Source Builder</strong></p>
 
-  <br />
-  <br />
+  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=600&size=20&duration=2800&pause=1000&color=E4405F&center=true&vcenter=true&width=650&lines=Building+fast%2C+good-looking+web+apps;Productivity+tools+with+a+vintage+twist;Design+engineering%3A+where+pixels+meet+performance" alt="" />
 
-  <!-- Top Social Badges -->
-  <p align="center">
-    <a href="https://www.instagram.com/godme_on/">
-      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://discord.gg/mGHkXSgnj">
-      <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Badge" />
-    </a>
-  </p>
+  <br /><br />
+
+  <a href="https://www.instagram.com/godme_on/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  &nbsp;
+  <a href="https://discord.gg/mGHkXSgnj"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  &nbsp;
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-0F172A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 </div>
 
@@ -34,24 +48,24 @@
 
 ### 🌟 About Me
 
-- 🔭 **Currently Building:** High-performance web dashboards and productivity applications with bespoke vintage & modern UI designs.
-- 🌱 **Learning & Exploring:** Advanced state architecture, full-stack ecosystems, and design engineering.
-- 💡 **Passion:** Blending timeless physical design aesthetics with modern digital interactivity.
-- ⚡ **Fun Fact:** I believe every pixel and micro-interaction counts.
+- 🔭 **Currently building:** productivity web apps and dashboards that borrow from vintage print design — paper textures, editorial type, dense data grids.
+- 🌱 **Learning:** state management at scale, full-stack patterns, and the craft of design engineering.
+- 💡 **I care about:** interfaces that feel tactile and intentional, and ship without bloat.
+- ⚡ **Fun fact:** I'll spend an hour tuning a 200ms hover transition and consider it time well spent.
 
 <details>
-<summary><strong>🎯 My Design & Engineering Philosophy (Click to expand)</strong></summary>
+<summary><strong>🎯 How I think about building software</strong></summary>
 <br />
 
-- **Aesthetic Functionality:** Software should feel tactile, intentional, and visually inspiring without sacrificing speed.
-- **Zero-Bloat Architecture:** Prioritizing clean state management, native web APIs, and lightweight dependencies.
-- **Detail-Oriented UX:** Crafting fluid keyboard shortcuts, custom theme engines, and responsive micro-interactions.
+- **Looks and speed aren't a trade-off.** Good visual design should never cost you performance.
+- **Lean by default.** Native web APIs and small dependencies before reaching for a framework-of-the-week.
+- **Details are the product.** Keyboard shortcuts, theme systems, and micro-interactions are where an app earns trust.
 
 </details>
 
 ---
 
-### 🛠️ Tech Stack & Skills
+### 🛠️ Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -65,79 +79,74 @@
 </p>
 
 <details>
-<summary><strong>🔍 Click to expand full toolkit & developer workflow</strong></summary>
+<summary><strong>🔍 Full toolkit</strong></summary>
 <br />
 
-- **Frontend Architecture:** React 19, Vite, TypeScript, Tailwind CSS, Lucide Icons, Canvas & SVG Visualizations
-- **Styling & Aesthetics:** Editorial Typography, Dynamic Theme Engines, Custom Color Pickers, Responsive Grid Layouts
-- **Tooling & Environment:** Git & GitHub, PowerShell, VS Code / Modern IDEs, LocalStorage Persistence Architecture
-- **Design & UX Systems:** Vintage & Modern UI Systems, High-Density Data Dashboards, Interactive Micro-interactions
+| Area | Tools |
+|---|---|
+| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons |
+| **Visuals** | SVG charts, HTML5 Canvas, custom theme engines, editorial typography |
+| **Backend & scripting** | Node.js, Python |
+| **Workflow** | Git & GitHub, VS Code, PowerShell |
 
 </details>
 
 ---
 
-### 🚀 Featured Highlights & Projects
+### 🚀 Featured Project
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">📅 Vintage Habit Tracker</h3>
       <p align="center">
-        An executive personal productivity dashboard featuring vintage paper aesthetics, dense spreadsheet calendar grids, daily/weekly progress analytics, and a custom color studio.
+        A personal habit tracker with a paper-and-ink aesthetic. Dense spreadsheet-style calendar grids, daily and weekly analytics, and a built-in color studio for custom themes.
       </p>
       <p align="center">
         <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
         <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
         <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-        <img src="https://img.shields.io/badge/Data_Viz-E4405F?style=flat-square" alt="Data Viz" />
+      </p>
+      <p align="center">
+        <a href="https://github.com/godme-on/REPO_NAME"><strong>Repo</strong></a> · <a href="https://YOUR_DEMO_URL"><strong>Live Demo</strong></a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🎨 Custom UI/UX Systems</h3>
-      <p align="center">
-        Modular component libraries engineered with bespoke theme engines, dynamic SVG charts, and interactive HTML5 canvas components with zero unnecessary bloat.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Design_Systems-5865F2?style=flat-square" alt="Design Systems" />
-        <img src="https://img.shields.io/badge/SVG_Engines-F7DF1E?style=flat-square&logoColor=black" alt="SVG Engines" />
-        <img src="https://img.shields.io/badge/Frontend_Arch-20232A?style=flat-square" alt="Frontend Architecture" />
-      </p>
+      <!-- Add a screenshot here once you have one — a visual sells a UI project better than any description -->
+      <img src="https://YOUR_SCREENSHOT_URL" alt="Vintage Habit Tracker screenshot" width="100%" />
     </td>
   </tr>
 </table>
 
-<details>
-<summary><strong>📊 GitHub Metrics & Activity (Click to expand)</strong></summary>
-<br />
+---
+
+### 📊 GitHub Activity
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=godme_on&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=godme_on&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=godme-on&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
+  <img height="165" src="https://streak-stats.demolab.com?user=godme-on&theme=radical&hide_border=true" alt="GitHub Streak" />
 </div>
-
-</details>
 
 ---
 
-### 📬 Connect with Me
-
-<p align="center">
-  I'm always open to discussing new opportunities, creative collaborations, or design engineering ideas.<br />
-  Feel free to reach out and connect with me directly:
-</p>
-
-<p align="center">
-  <a href="https://www.instagram.com/godme_on/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://discord.gg/mGHkXSgnj">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
-  </a>
-</p>
-
 <div align="center">
-  <sub>Designed with care by <a href="https://github.com/godme_on">@godme_on</a> • Stay curious & keep building 🚀</sub>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5865F2,100:E4405F&height=80&section=footer" width="100%" alt="Footer Banner" />
+  <p>Open to collaborations, design engineering ideas, and new opportunities — reach out via any of the links above.</p>
+  <sub>Stay curious & keep building 🚀</sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5865F2,100:E4405F&height=80&section=footer" width="100%" alt="" />
 </div>
+```
+
+---
+
+## Things to fill in before publishing
+
+| Placeholder | What to put |
+|---|---|
+| `godme-on` | Your actual GitHub handle (no underscores) |
+| `YOUR_EMAIL` | Or delete the badge if you'd rather not share one |
+| `REPO_NAME` / `YOUR_DEMO_URL` | The habit tracker repo and deployed URL |
+| `YOUR_SCREENSHOT_URL` | Upload an image to the repo and link it — for a UI-focused project this matters more than anything else on the page |
+
+**Two optional upgrades** if you want to go further:
+- Add a **Top Languages** card next to the stats: `https://github-readme-stats.vercel.app/api/top-langs/?username=godme-on&layout=compact&theme=radical&hide_border=true`
+- Pin the habit tracker repo on your profile (Customize your pins) so it shows up below the README too.
