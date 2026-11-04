@@ -3,7 +3,7 @@
   <!-- Dynamic Header Banner -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E4405F,100:5865F2&height=130&section=header&text=Sidharth%20Jha&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" alt="Header Banner" />
 
-  <h2>Hi there, I'm <a href="https://github.com/godme_on">godme_on</a> 👋</h2>
+  <h2>Hi there, I'm <a href="https://github.com/GODXME">godme_on (GODXME)</a> 👋</h2>
   
   <p align="center">
     <strong>Creative Developer • UI/UX Design Engineer • Open Source Builder</strong>
@@ -136,8 +136,13 @@
 <br />
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=godme_on&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=E4405F&icon_color=5865F2&count_private=true" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=godme_on&theme=radical&hide_border=true&background=0D1117&ring=E4405F&fire=E4405F&currStreakLabel=5865F2" alt="GitHub Streak" />
+  <a href="https://github.com/GODXME">
+    <img height="175" src="https://ghstats.dev/api/card?username=GODXME&border_radius=6.5" alt="GODXME GitHub Stats" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/GODXME">
+    <img height="175" src="https://github-readme-streak-stats.herokuapp.com/?user=GODXME&theme=radical&hide_border=true&border_radius=6.5&background=0D1117&ring=E4405F&fire=E4405F&currStreakLabel=5865F2" alt="GODXME GitHub Streak" />
+  </a>
 </div>
 
 </details>
@@ -170,6 +175,6 @@
 </p>
 
 <div align="center">
-  <sub>Designed & engineered by <a href="https://github.com/godme_on">Sidharth Jha (@godme_on)</a> • Stay curious & keep building 🚀</sub>
+  <sub>Designed & engineered by <a href="https://github.com/GODXME">Sidharth Jha (@GODXME)</a> • Stay curious & keep building 🚀</sub>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:5865F2,100:E4405F&height=80&section=footer" width="100%" alt="Footer Banner" />
 </div>
